@@ -29,6 +29,26 @@ body{
       color: #866e25;
       box-shadow: -2px 2px 2px -1px #9b8644;
 
+      &-delete{
+        width: auto;
+        height: auto;
+        padding: 5px;
+        background-color: transparent;
+        color: #584c27;
+        float: right;
+        border: solid 1px transparent;
+        outline: none;
+        font-size: 14px;
+        border-radius: 35px;
+        cursor: pointer;
+        margin-right: 20px;
+
+        &:hover{
+          border: solid 1px #A10D09;
+          color: #A10D09;
+        }
+      }
+
       span{
         color: #584c27;
         font-size: 20px;
@@ -55,7 +75,6 @@ body{
         border-left: 10px solid #dec062;
         box-shadow: -1px 1px 1px 0px #9b8644;
       }
-
     }
 
     &__btn{
@@ -66,7 +85,7 @@ body{
       opacity: .3;
       position: fixed;
       text-align: center;
-      top: 80%;
+      top: 80%; // 50%
       left: 1%;
 
       textarea{
